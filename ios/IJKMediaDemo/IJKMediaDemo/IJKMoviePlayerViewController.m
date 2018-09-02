@@ -75,6 +75,7 @@
 
     IJKFFOptions *options = [IJKFFOptions optionsByDefault];
     //[options setPlayerOptionValue:@"1" forKey:@"videotoolbox"];
+    //[options setPlayerOptionValue:@"1" forKey:@"audiotoolbox"];
     //[options setPlayerOptionValue:@"10" forKey:@"framedrop"];
     //[options setPlayerOptionValue:@"0" forKey:@"package-buffering"];
     //[options setFormatOptionValue:@"tcp" forKey:@"rtsp_transport"];// force using tcp insteak of udp

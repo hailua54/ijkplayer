@@ -37,6 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.textView.text = @"rtsp://cdn11-mstream.w2stream.com/etable313m/PH313Live1B75064D703697";
 }
 
 - (void)onClickPlayButton {
@@ -45,6 +46,7 @@
     
     if ([scheme isEqualToString:@"http"]
         || [scheme isEqualToString:@"https"]
+        || [scheme isEqualToString:@"rtsp"]
         || [scheme isEqualToString:@"rtmp"]) {
         [IJKVideoViewController presentFromViewController:self withTitle:[NSString stringWithFormat:@"URL: %@", url] URL:url completion:^{
 //            [self.navigationController popViewControllerAnimated:NO];

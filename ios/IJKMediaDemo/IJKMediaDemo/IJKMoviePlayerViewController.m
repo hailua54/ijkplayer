@@ -74,7 +74,17 @@
     // [IJKFFMoviePlayerController checkIfPlayerVersionMatch:YES major:1 minor:0 micro:0];
 
     IJKFFOptions *options = [IJKFFOptions optionsByDefault];
-
+    //[options setPlayerOptionValue:@"1" forKey:@"videotoolbox"];
+    //[options setPlayerOptionValue:@"10" forKey:@"framedrop"];
+    //[options setPlayerOptionValue:@"0" forKey:@"package-buffering"];
+    //[options setFormatOptionValue:@"tcp" forKey:@"rtsp_transport"];// force using tcp insteak of udp
+    //[options setFormatOptionValue:@"1000000" forKey:@"max_delay"];
+    //[options setFormatOptionValue:@"1" forKey:@"reconnect_at_eof"];
+    //[options setFormatOptionValue:@"1" forKey:@"reconnect_streamed"];
+    //[options setFormatOptionValue:@"10" forKey:@"reconnect_delay_max"];
+    //[options setFormatOptionValue:@"prefer_tcp" forKey:@"rtsp_flags"];
+    //[options setFormatOptionValue:@"5000000" forKey:@"stimeout"];
+    //[options setFormatOptionValue:@"video" forKey:@"allowed_media_types"];
     self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL:self.url withOptions:options];
     self.player.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.player.view.frame = self.view.bounds;
